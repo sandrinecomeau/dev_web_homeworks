@@ -1,0 +1,74 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15vh;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 16vw;
+    min-width: 180px;
+}
+
+
+#dropbtn{
+    height: 25px;
+    padding: 1px 5px;
+}
+
+#dropdown {
+    display: none;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input[type="reset"]{
+    margin-left: -25px;
+    padding: 4px;
+    position: absolute;
+    width: 25px;
+    border: none;
+    background: none;
+}
+
+.submit{
+    margin: 0 10px;
+    height: 25px;
+    padding: 0 10px;
+}
+
+#suggestions {
+    background-color: #f9f9f9;
+    min-width: 160px;
+    max-height: 25vh;
+    overflow-y: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.choice{
+    padding: 2px 5px;
+}
+
+.choice:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.NoResults{
+    padding: 2px 5px;
+}

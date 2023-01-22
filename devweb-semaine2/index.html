@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FavColor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="scripts.js"></script>
+</head>
+<body>
+<h1>What is your favorite color?</h1>
+
+<div class="row">
+    <form>
+        <div class="column">
+            <button onclick="buttonClick()" id="dropbtn" type='button'>Select a color &#160; &#9662; </button>
+            <div id="dropdown">
+                <input id="input" type="text" onkeyup="showSuggestions(this.value)">
+                <input type="reset" value="x" onclick=resetSuggestions() />
+                <div id="suggestions"></div>
+            </div>
+        </div>
+    </form>
+    <button class="submit" onclick="changeColor()" type='button'>Go</button>
+</div>
+</body>
+</html>
