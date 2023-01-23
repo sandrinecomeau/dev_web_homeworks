@@ -1,0 +1,215 @@
+/*default styles for all the page*/
+
+html, body{
+    border: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 100%
+}
+
+/*default text and background values*/
+body {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 200;
+    background-color: #d74c2d;
+}
+
+.background-color-blue{
+    color: #d74c2d;
+    background-color: #062244;
+    width: 100%;
+}
+
+.background-color-red{
+    color: #062244;
+    background-color: #d74c2d;
+    width: 100%;
+}
+
+.section100vh{
+    height: 100vh;
+}
+
+.opensans {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
+
+/*links*/
+a:visited, a {
+    color: #d74c2d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+
+
+/*specific sections*/
+
+
+/*nav bar*/
+.navbar{
+    position:fixed;
+    top:0;
+    background-color: #062244;
+    width: 100vw;
+    padding-bottom: 3px;
+    box-shadow: rgba(19, 19, 51, 0.37) 0 2px 4px 0, rgba(11, 13, 17, 0.52) 0 1px 2px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar a{
+    padding: 10px;
+}
+
+.navbar .menu-img{
+    display: none;
+}
+
+
+/*intro*/
+#Intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+#Intro .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    animation-duration: 3s;
+    animation-name: appears;
+}
+
+#Intro h1{
+    font-size: 9em;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#Intro h3{
+    font-size: 2em;
+    padding: 0 0 10vh 0;
+    border: 0;
+    margin: 0;
+}
+
+@keyframes appears{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+#Menu{
+    padding: 0 10px;
+}
+
+#Menu .menu-section{
+    padding: 0 0 0 3vw;
+ }
+
+#Menu .flex{
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+#Menu .flex-space-between{
+    padding: 0 33vw 0 3vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Menu .flex-space-between h4, #Menu .flex-space-between p{
+    margin-top: 0;
+}
+
+#Menu .column{
+    display: flex;
+    flex-direction: column;
+}
+
+#Menu .column p{
+    padding: 0 33vw 0 3vw;
+}
+
+#Menu .button-flex{
+    display: flex;
+    justify-content: center;
+}
+
+#Menu button{
+    background-color: #d74c2d;
+    color: #d9e0e3;
+    border: rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    padding: 15px 30px;
+    margin: 10em 0 5em 0;
+    font-family: 'Abril Fatface', cursive;
+}
+
+#Menu button:hover{
+    background-color: #fa4323;
+}
+
+#Menu button:active{
+    background-color: #c0311a;
+}
+
+#About{
+    padding: 5vh 0 20vh 10px;
+}
+
+
+/*responsive design*/
+
+/*smartphone*/
+@media screen and (max-width: 600px){
+    #texture{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    #Menu .flex{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #Menu .flex-space-between{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+    }
+    #Menu .flex-space-between h4, #Menu .flex-space-between p{
+        padding: 10px 0;
+        width: 100%;
+    }
+    #Menu .column p{
+        padding: 10px 0;
+    }
+    .navbar a{
+        display: none;
+    }
+
+    .navbar .menu-img{
+        display: flex;
+        padding: 10px;
+    }
+}
+
+
